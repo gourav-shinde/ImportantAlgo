@@ -13,7 +13,8 @@ for(int i=0;i<test_cases;i++){
     cin>>ranges[i];
     if(ranges[i]>max)max=ranges[i];
 }
-max++;
+max++;'
+# sieveOfEratosthenes start#########################
 vector<bool> prime_numbers(max,true);
 prime_numbers[0]=false;
 prime_numbers[1]=false;
@@ -26,7 +27,7 @@ if(prime_numbers[i])
     prime_numbers[j]= false;
 }
 }
-
+# sieveOfEratosthenes end#########################
 int res[max];
 for(i=0;i<max;i++)
 res[i]=0;
